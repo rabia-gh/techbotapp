@@ -8,8 +8,19 @@ node {
         }
         stage('Build'){
                 bash "cd front"
+               
+        }
+          stage('Build1'){
                 bash "npm install @angular/compiler-cli"
-                bash "npm install -g @angular/cli"
+               
+        }
+          stage('Build2'){
+                bash "npm install @angular/compiler-cli"
+               
+        }
+          stage('Build2'){
+               bash "npm install -g @angular/cli"
+               
         }
         stage('Deploy'){
                 bash "ng serve " 
